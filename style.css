@@ -2,6 +2,15 @@
 
 body {
     margin: 0em;
+    font-family: 'Alegreya', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Nunito', serif;
 }
 
 .cover {
@@ -14,8 +23,21 @@ body {
     background-blend-mode: darken;
 }
 
+.cover-small {
+    height: 200px;
+    background-blend-mode: normal;
+}
+
 .card {
     border: 0 !important;
     box-shadow: 0px 4px 16px -1px rgba(0, 0, 0, 0.75);
     /*box-shadow: 0px 4px 16px -1px rgba(0,0,0,0.1), 0px 2px 4px -1px rgba(0,0,0,0.86);*/
+}
+
+.card-title {
+    min-height: 5rem;
+}
+
+.card-text {
+    min-height: 6rem;
 }

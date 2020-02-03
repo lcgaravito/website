@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Nunito&display=swap" rel="stylesheet" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -33,6 +35,9 @@
             <h1>
                 Luis Carlos Garavito Romero
             </h1>
+            <h2>
+                <span class="txt-rotate" data-period="500" data-rotate='["Engineer","Student","Developer","Coder"]'></span>
+            </h2>
             <p>
                 Ing. de Sistemas y Computación
             </p>
@@ -43,35 +48,85 @@
     </header>
     <section>
         <div class="container mt-5 mb-5">
-            <div class="row">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://cdn.glitch.com/7aa12eae-b684-4348-a95d-672f365ece49%2Fcode_min.jpg?v=1579321695398" class="card-img-top" alt="MacBook Pro - Photo by Caspar Camille Rubin on Unsplash - https://unsplash.com/photos/fPkvU7RDmCo" />
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo Back-end</h5>
-                        <p class="card-text">
-                            Implementación de API's y servidores web.
-                        </p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                    <div class="card">
+                        <!--img
+                src="https://cdn.glitch.com/7aa12eae-b684-4348-a95d-672f365ece49%2Fcode_min.jpg?v=1579321695398"
+                class="card-img-top"
+                alt="MacBook Pro - Photo by Caspar Camille Rubin on Unsplash - https://unsplash.com/photos/fPkvU7RDmCo"
+              /-->
+                        <div class="cover cover-small" style="background-image:url(https://cdn.glitch.com/7aa12eae-b684-4348-a95d-672f365ece49%2Fcode_min.jpg?v=1579321695398)" title="MacBook Pro - Photo by Caspar Camille Rubin on Unsplash - https://unsplash.com/photos/fPkvU7RDmCo"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollo Back-end</h5>
+                            <p class="card-text">
+                                Implementación de API's y servidores web.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="https://cdn.glitch.com/7aa12eae-b684-4348-a95d-672f365ece49%2Fwebsite_min.jpg?v=1579668393206" class="card-img-top" alt="MacBook Pro - Photo by Desola Lanre-Ologun on Unsplash - https://unsplash.com/photos/xvcdAmbXcOI" />
-                    <div class="card-body">
-                        <h5 class="card-title">Diseño y creación de páginas web</h5>
-                        <p class="card-text">
-                            Desarrollo de páginas web para cualquier tipo de empresa.
-                        </p>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                    <div class="card">
+                        <!--img
+                src="https://cdn.glitch.com/7aa12eae-b684-4348-a95d-672f365ece49%2Fwebsite_min.jpg?v=1579668393206"
+                class="card-img-top"
+                alt="MacBook Pro - Photo by Desola Lanre-Ologun on Unsplash - https://unsplash.com/photos/xvcdAmbXcOI"
+              /-->
+                        <div class="cover cover-small" style="background-image:url(https://cdn.glitch.com/7aa12eae-b684-4348-a95d-672f365ece49%2Fwebsite_min.jpg?v=1579668393206)" title="MacBook Pro - Photo by Desola Lanre-Ologun on Unsplash - https://unsplash.com/photos/xvcdAmbXcOI"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Diseño y creación de páginas web</h5>
+                            <p class="card-text">
+                                Desarrollo de páginas web para cualquier tipo de empresa.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="https://cdn.glitch.com/7aa12eae-b684-4348-a95d-672f365ece49%2Fmobile_min.jpg?v=1579669286854" class="card-img-top" alt="Mobile phone - Photo by Jonas Lee on Unsplash - https://unsplash.com/photos/o6elTKWZ5bI" />
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo Movil</h5>
-                        <p class="card-text">
-                            Diseño y creación de aplicaciones móviles para Android y IOS.
-                        </p>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                    <div class="card">
+                        <!--img
+                src="https://cdn.glitch.com/7aa12eae-b684-4348-a95d-672f365ece49%2Fmobile_min.jpg?v=1579669286854"
+                class="card-img-top"
+                alt="Mobile phone - Photo by Jonas Lee on Unsplash - https://unsplash.com/photos/o6elTKWZ5bI"
+              /-->
+                        <div class="cover cover-small" style="background-image:url(https://cdn.glitch.com/7aa12eae-b684-4348-a95d-672f365ece49%2Fmobile_min.jpg?v=1579669286854)" title="Mobile phone - Photo by Jonas Lee on Unsplash - https://unsplash.com/photos/o6elTKWZ5bI"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollo Movil</h5>
+                            <p class="card-text">
+                                Diseño y creación de aplicaciones móviles para Android y IOS.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-5">
+                    <img src="https://cdn.glitch.com/7aa12eae-b684-4348-a95d-672f365ece49%2Fdoodle.svg?v=1580716096175" alt="Person walking - By https://www.opendoodles.com/" />
+                </div>
+                <div class="col-12 col-sm-6">
+                    <h3>
+                        ¡Contáctame!
+                    </h3>
+                    <p>
+                        Escríbeme y agendamos una cita
+                    </p>
+                    <a href="#">Ir a Contacto</a>
+                </div>
+            </div>
+            <form action="">
+                <label for="email">Correo electrónico</label>
+                <div class="d-flex">
+                    <div class="flex-fill mr-2">
+                        <input type="email" id="email" class="form-control" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+              Enviar
+            </button>
+                </div>
+            </form>
         </div>
     </section>
 </body>
