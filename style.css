@@ -1,0 +1,21 @@
+/* CSS files add styling rules to your content */
+
+body {
+    margin: 0em;
+}
+
+.cover {
+    color: white;
+    height: 400px;
+    background-image: url(https://cdn.glitch.com/7aa12eae-b684-4348-a95d-672f365ece49%2Fdesktop.jpg?v=1578544956390);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+}
+
+.card {
+    border: 0 !important;
+    box-shadow: 0px 4px 16px -1px rgba(0, 0, 0, 0.75);
+    /*box-shadow: 0px 4px 16px -1px rgba(0,0,0,0.1), 0px 2px 4px -1px rgba(0,0,0,0.86);*/
+}
