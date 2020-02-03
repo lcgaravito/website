@@ -41,3 +41,12 @@ h5 {
 .card-text {
     min-height: 6rem;
 }
+
+.contact {
+    background-color: rgb(219, 219, 219);
+}
+
+.page-footer {
+    background-color: #343a40;
+    color: white;
+}
