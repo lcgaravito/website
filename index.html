@@ -6,11 +6,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <!--Hace Falta el meta para autor y descripcion -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/icono.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Nunito&display=swap" rel="stylesheet" />
+    <!--W3S Validator genera error en este ultimo link por el caracter '|' -->
     <script src="https://kit.fontawesome.com/ed8677a3a8.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
 </head>
@@ -19,7 +20,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">LCGR</a>
-
+            <!-- Este link no tienen ninguna ruta o elemento asociado: link roto -->
             <ul class="nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
@@ -29,6 +30,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
+                    <!-- Este link no tienen ninguna ruta o elemento asociado: link roto -->
                 </li>
             </ul>
         </nav>
@@ -39,10 +41,12 @@
             </h1>
             <h2>
                 <span class="txt-rotate" data-period="500" data-rotate='["Engineer","Student","Developer","Coder"]'></span>
+                <!--W3S Validator manda error por que el elemento h2 no contiene texto, la opcion para evitar este error seria quitar el h2 y poner las propiedades de este al 'span' mediante CSS  -->
             </h2>
             <button class="btn btn-outline-light">
                     Contact me!
             </button>
+            <!-- Este boton no tienen ninguna ruta o elemento asociado: link roto -->
         </div>
     </header>
     <section>
@@ -109,6 +113,7 @@
                 <div class="col-12 col-sm-6 mt-5 mb-5">
                     <h3 style="text-align: center;">Contact me!</h3>
                     <form action="">
+                        <!--W3S Validator genera error porque no esta permitido dejar el atributo 'action' vacio -->
                         <div class="form-group">
                             <label for="exampleFormControl1">Name</label>
                             <input type="text" class="form-control" id="exampleFormControl1" placeholder="Your name">
@@ -143,6 +148,7 @@
                 <a class="btn-icon" href="https://twitter.com/luizk44" target="_blank">
                     <i class="fab fa-twitter"></i>
                 </a class="btn">
+                <!--El tag de finalizacion tiene un atributo -->
                 <a class="btn-icon" href="https://www.instagram.com/luizk44/" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
