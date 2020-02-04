@@ -1,7 +1,8 @@
 /*
 Source: https://codepen.io/gschier/pen/jkivt
 */
-
+//Hizo falta el uso del modo strict
+"use strict";
 
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
