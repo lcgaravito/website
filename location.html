@@ -6,11 +6,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <!--Hace falta el meta para el autor y la descripcion-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/icono.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Nunito&display=swap" rel="stylesheet" />
+    <!-- W3S validator genera error por  este ultimo link debido al caracter '|'-->
     <script src="script.js" defer></script>
 </head>
 
@@ -18,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">LCGR</a>
-
+            <!-- Este link no tienen ninguna ruta o elemento asociado: link roto -->
             <ul class="nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
@@ -28,6 +29,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
+                    <!-- Este link no tiene ninguna ruta o elemento asocido: link roto-->
                 </li>
             </ul>
         </nav>
@@ -37,6 +39,7 @@
             </h1>
             <h2>
                 <span class="txt-rotate" data-period="500" data-rotate='["Engineer","Student","Developer","Coder"]'></span>
+                <!--W3S validator manda error por lo que el h2 no contiene ningun texto, para evitar este error se le podrian poner los atributos CSS de un H2 al span que se esta usando -->
             </h2>
             <button class="btn btn-outline-light">
                     Contact me!
@@ -49,6 +52,7 @@
             <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39280769113!2d-74.24789509678376!3d4.648625940456253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1580749422252!5m2!1ses-419!2sco"
                     width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <!--W3S validator manda error por que el atributo frameboard esta 'deprecated' y deberia usarse en CSS -->
             </div>
         </div>
     </section>
@@ -61,6 +65,7 @@
                 <div class="col-12 col-sm-6 mt-5 mb-5">
                     <h3 style="text-align: center;">Contact me!</h3>
                     <form action="">
+                        <!--W3S Validator genera error debido a que no esta permitido dejar el atributo 'action' vacio -->
                         <div class="form-group">
                             <label for="exampleFormControl1">Name</label>
                             <input type="text" class="form-control" id="exampleFormControl1" placeholder="Your name">
