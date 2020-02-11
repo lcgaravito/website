@@ -11,7 +11,11 @@ const changeGreeting = function() {
         greetingChanged = '¡Buenas noches!'
     }
     document.getElementById("greeting").innerHTML = greetingChanged;
-    document.getElementById("hourSpan").innerHTML = hour + ':' + minutes;
+    if(minutes<10) {
+        document.getElementById("hourSpan").innerHTML = hour + ':0' + minutes;
+    }else{
+        document.getElementById("hourSpan").innerHTML = hour + ':' + minutes;
+    }
 }
 
 changeGreeting();
