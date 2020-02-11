@@ -1,6 +1,7 @@
 const changeGreeting = function() {
     var date = new Date();
     var hour = date.getHours();
+    var minutes = date.getMinutes();
     var greetingChanged = '';
     if (hour >= 6 && hour < 12) {
         greetingChanged = '¡Buenos días!';
@@ -10,6 +11,7 @@ const changeGreeting = function() {
         greetingChanged = '¡Buenas noches!'
     }
     document.getElementById("greeting").innerHTML = greetingChanged;
+    document.getElementById("hourSpan").innerHTML = hour + ':' + minutes;
 }
 
 changeGreeting();
